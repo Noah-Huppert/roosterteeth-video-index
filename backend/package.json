@@ -1,0 +1,9 @@
+{
+  "name": "backend",
+  "version": "0.1.0",
+  "description": "Backend which indexes Roosterteeth videos",
+  "main": "src/index.ts",
+  "repository": "git@github.com:Noah-Huppert/roosterteeth-video-index.git",
+  "author": "Noah Huppert <contact@noahh.io>",
+  "license": "MIT"
+}
