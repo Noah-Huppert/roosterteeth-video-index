@@ -1,0 +1,20 @@
+version: "3.7"
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: devrtvideoindex
+      POSTGRES_PASSWORD: devrtvideoindex
+      POSTGRES_DB: devrtvideoindex
+    volumes:
+      - "postgresdata:/var/lib/postgresql/data/"
+    restart: always
+  backend:
+    image: node:latest
+    working_dir: /mnt/backend
+    volumes:
+      - "./:/mnt"
+    command: ./scripts/dev.sh
+    restart: always
+volumes:
+  postgresdata: {}
