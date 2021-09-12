@@ -1,0 +1,8 @@
+# NPM modules
+node_modules/
+
+# Typescript built
+dist/
+
+# Log files
+*.log
